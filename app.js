@@ -15,10 +15,10 @@ var app = express();
 // Register configs for the environments where the app functions
 // , these can be stored in a separate file using a module like config
 var APIKeys = {
-    appId           : '__insert_your_app_id__',
-    clientId        : '__insert_your_app_client_id__',
-    clientSecret    : '__insert_your_app_client_secret__',
-    appSignature    : '__insert_your_app_signature__',
+    appId           : 'df45c339-e3a1-4ab7-8667-d0a082916fc7',
+    clientId        : '97f0rmws7d9gunumomu336ht',
+    clientSecret    : 'ZYymlQF4tDF8mMJs1hMa3uyZ',
+    appSignature    : 'lq3vlt3eb1qvfag2xgkkmbiwdl02cw4wa2qqk2dgybohfx0qqsvpbvpucpolq3cu32xmlnpdx0oxo5ngrwugddkz2y0lia5imbczte244deubhrnuwnq3gbixhjmh1f0icayrm5mbgtcdu4zezwvs3dz5xrwfkkcyzt5gpprynwogasklj0dzp5kqn3orbyucdtnai0ozzurbtomyusd0frexwvxmkvtgf0hjki3sbqyq2ezazbp0d1f0zo2luj ',
     authUrl         : 'https://auth.exacttargetapis.com/v1/requestToken?legacy=1'
 };
 
@@ -79,7 +79,7 @@ app.post('/ixn/triggers/hello-world/', trigger.edit );
 // Abstract Event Handler
 app.post('/fireEvent/:type', function( req, res ) {
     var data = req.body;
-    var triggerIdFromAppExtensionInAppCenter = '__insert_your_trigger_key_here__';
+    var triggerIdFromAppExtensionInAppCenter = 'jb-hello-world-trigger-kratigarg';
     var JB_EVENT_API = 'https://www.exacttargetapis.com/interaction-experimental/v1/events';
     var reqOpts = {};
 
